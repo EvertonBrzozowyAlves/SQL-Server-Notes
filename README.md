@@ -1,1 +1,1 @@
-# SQL-Sserver-Notes
+# SQL Server Notes
