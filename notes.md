@@ -363,7 +363,9 @@ CREATE TABLE tblEstoque
 	FOREIGN KEY (IdModelo)
 	REFERENCES tblModelos(IdModelo),
 
-	DataEntrada		DATE	DEFAULT GETDATE(),
+	DataEntrada		DATE		NOT NULL
+	CONSTRAINT		DF_tblEstoque_DataEntrada   		
+	DEFAULT 		GETDATE(),
 
 	PrecoEstoque	MONEY	NOT NULL
 	CONSTRAINT		CK_tblEstoque_PrecoEstoque
